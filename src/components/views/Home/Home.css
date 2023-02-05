@@ -1,0 +1,139 @@
+.main {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.navbar {
+  height: 7vh;
+  width: 100%;
+  display: flex;
+}
+
+.navbar__logo {
+  width: 50%;
+}
+
+.navbar__logo-img {
+  width: 25%;
+}
+
+.navbar__menu {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 50%;
+}
+
+.navbar__menu img {
+  width: 30px;
+  height: 20px;
+}
+
+.main__header-image {
+}
+
+.main__header-image img {
+  width: 100%;
+}
+
+.main__header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main__header-content-title {
+  width: 30ch;
+}
+
+.main__header-content-title h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.main__header-content-description p {
+  color: hsl(236, 13%, 42%);
+  font-size: 15px;
+}
+
+.btnReadMore {
+  background-color: #f15d51;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 5px;
+  cursor: pointer;
+}
+
+.main__news {
+  /* margin-top: 30px; */
+  background-color: #00001a;
+  padding: 20px;
+}
+
+.main__news-news {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main__news-title {
+  color: hsl(35, 77%, 62%);
+}
+
+.news__title {
+  margin-top: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+.news__content {
+  color: white;
+  font-size: 14px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid white;
+}
+
+.main__article {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.main__article-techNews {
+  display: flex;
+}
+
+.main__article-techNews-image {
+  width: 30%;
+}
+
+.main__article-techNews-image img {
+  width: 100%;
+}
+
+.main__article-techNews-content {
+  padding: 0px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 70%;
+}
+
+.main__article-techNews-content-id {
+  color: #c4c3c8;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.main__article-techNews-content-title {
+  font-weight: bolder;
+}
+
+.main__article-techNews-content-description {
+  color: hsl(236, 13%, 42%);
+}
