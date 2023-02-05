@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import News from "../../common/News/News";
 import "./Home.css";
 import news from "../../../utils/news";
 import techNews from "../../../utils/techNews.json";
-
 import TechNews from "../../common/TechNews/TechNews";
+import SideBar from "../../ui/SideBar/SideBar";
 
 function Home() {
+  const [activeMenu, setActiveMenu] = useState(false);
+
   return (
-    <div className="main">
+    <div className="main gray-cover-main">
+      <div className={activeMenu ? "gray-cover" : "hide"}></div>
       <nav className="navbar">
         <div className="navbar__logo">
           <img
@@ -18,7 +21,12 @@ function Home() {
           />
         </div>
         <div className="navbar__menu">
-          <img src="/resources/icon-menu.svg" alt="menu-icon" />
+          <img
+            src="/resources/icon-menu.svg"
+            alt="menu-icon"
+            onClick={() => setActiveMenu(true)}
+          />
+          <SideBar active={activeMenu} setActiveMenu={setActiveMenu} />
         </div>
       </nav>
       <header className="main__header">
