@@ -2,16 +2,14 @@ import React from "react";
 
 function TechNews({ id, title, description, image }) {
   return (
-    <div className="main__article-techNews">
-      <div className="main__article-techNews-image">
-        <img src={image} alt={image} />
+    <div className="article__techNews techNews">
+      <div className="techNews__image-container image-container">
+        <img src={image} alt={image} className="image-container--techNews" />
       </div>
-      <div className="main__article-techNews-content">
-        <div className="main__article-techNews-content-id">{id}</div>
-        <div className="main__article-techNews-content-title">{title}</div>
-        <div className="main__article-techNews-content-description">
-          {description}
-        </div>
+      <div className="techNews__techNews-articles techNews-articles">
+        <div className="techNews-articles__id">{id}</div>
+        <div className="techNews-articles__title">{title}</div>
+        <div className="techNews-articles__description">{description}</div>
       </div>
     </div>
   );

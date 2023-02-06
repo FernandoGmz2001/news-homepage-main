@@ -5,9 +5,10 @@ function SideBar({ active, setActiveMenu }) {
     <div className={active ? "navbar__sideBar" : "navbar__sideBar hide"}>
       <div className="navbar__sideBar-close">
         <img
-          src="/public/resources/icon-menu-close.svg"
+          src="/resources/icon-menu-close.svg"
           alt="icon-close"
           onClick={() => setActiveMenu(false)}
+          className="sideBar-close__icon"
         />
       </div>
       <ul className="navbar__sideBar-links">

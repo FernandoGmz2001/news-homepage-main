@@ -2,9 +2,9 @@ import React from "react";
 
 function News({ title, content }) {
   return (
-    <div className="main__news-news">
-      <div className="news__title">{title}</div>
-      <div className="news__content">{content}</div>
+    <div className="news__new new">
+      <div className="new__title">{title}</div>
+      <div className="new__content">{content}</div>
     </div>
   );
 }
